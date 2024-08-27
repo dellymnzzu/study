@@ -26,5 +26,5 @@ public class User {
     private List<Order> orders = new ArrayList<>();
 
     @OneToMany(mappedBy = "user")
-    private List<cart> carts = new ArrayList<>();
+    private List<Cart> carts = new ArrayList<>();
 }

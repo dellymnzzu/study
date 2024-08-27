@@ -1,11 +1,10 @@
 package com.studyshop.shop;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.ColumnDefault;
 
 @Entity
 @Table(name = "Cart")
-public class cart {
+public class Cart {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "Cart_ID")
     private Integer Id;  // 장바구니 고유 아이디
 

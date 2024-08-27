@@ -3,7 +3,6 @@ package com.studyshop.shop;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 
-import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -34,7 +33,7 @@ public class Product {
     public String productDesc;  // 상품 정보
 
     @OneToMany(mappedBy = "product")
-    private List<cart> carts = new ArrayList<>();
+    private List<Cart> carts = new ArrayList<>();
 
     @OneToMany(mappedBy = "product")
     private List<OrderDetail> orderDetails = new ArrayList<>();
