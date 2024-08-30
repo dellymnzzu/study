@@ -1,2 +1,7 @@
-package com.studyshop.shop;public class AuthController {
+package com.studyshop.shop;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class AuthController {
 }

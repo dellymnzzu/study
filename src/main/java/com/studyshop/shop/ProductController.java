@@ -1,2 +1,4 @@
-package com.studyshop.shop;public class ProductController {
+package com.studyshop.shop;
+
+public class ProductController {
 }
