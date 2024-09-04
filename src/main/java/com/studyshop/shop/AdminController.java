@@ -15,4 +15,5 @@ public class AdminController {
         adminRepository.findAll();
         return "Admin.html";
     }
+
 }

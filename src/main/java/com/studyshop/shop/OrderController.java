@@ -9,10 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequiredArgsConstructor
 public class OrderController {
     private final OrderRepository orderRepository;
+    private final OrderDetailRepository orderDetailRepository;
 
     @GetMapping("/order")
-    String Admin(Model model){
+    String Order(Model model){
         orderRepository.findAll();
         return "order.html";
+    }
+    @GetMapping("/orderDetail")
+    String OrderDetail(Model model){
+
+        return "orderDetail.html";
     }
 }

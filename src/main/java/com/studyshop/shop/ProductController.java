@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ProductController {
     private final ProductRepository productRepository;
 
+
     @GetMapping("/product")
-    String Admin(Model model){
+    String Product(Model model){
         productRepository.findAll();
         return "product.html";
     }
